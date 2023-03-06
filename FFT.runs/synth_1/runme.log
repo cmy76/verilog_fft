@@ -1,0 +1,320 @@
+
+*** Running vivado
+    with args -log fft_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fft_top.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source fft_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 876.656 ; gain = 98.773
+Command: read_checkpoint -auto_incremental -incremental D:/FPGA/fft_ip.srcs/utils_1/imports/synth_1/butterfly.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/FPGA/fft_ip.srcs/utils_1/imports/synth_1/butterfly.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top fft_top -part xc7z010clg400-1 -assert
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 40268
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fft_top' [D:/FPGA/fft_ip.srcs/sources_1/new/fft_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'butterfly' [D:/FPGA/fft_ip.srcs/sources_1/new/butterfly.v:23]
+INFO: [Synth 8-6157] synthesizing module 'spin_table' [D:/FPGA/fft_ip.srcs/sources_1/new/spin_table.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'spin_table' (0#1) [D:/FPGA/fft_ip.srcs/sources_1/new/spin_table.v:23]
+INFO: [Synth 8-6157] synthesizing module 'complex_multiplier' [D:/FPGA/fft_ip.srcs/sources_1/new/complex_multiplier.v:23]
+INFO: [Synth 8-6157] synthesizing module 'booth_top' [D:/FPGA/fft_ip.srcs/sources_1/new/booth_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'booth' [D:/FPGA/fft_ip.srcs/sources_1/new/booth.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'booth' (0#1) [D:/FPGA/fft_ip.srcs/sources_1/new/booth.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'booth_top' (0#1) [D:/FPGA/fft_ip.srcs/sources_1/new/booth_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'complex_multiplier' (0#1) [D:/FPGA/fft_ip.srcs/sources_1/new/complex_multiplier.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'butterfly' (0#1) [D:/FPGA/fft_ip.srcs/sources_1/new/butterfly.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fft_top' (0#1) [D:/FPGA/fft_ip.srcs/sources_1/new/fft_top.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint D:/FPGA/fft_ip.srcs/utils_1/imports/synth_1/butterfly.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   6 Input   24 Bit       Adders := 48    
+	   2 Input   24 Bit       Adders := 12    
+	   3 Input   24 Bit       Adders := 12    
+	   2 Input   12 Bit       Adders := 24    
+	   3 Input   12 Bit       Adders := 24    
++---Registers : 
+	               24 Bit    Registers := 288   
+	                1 Bit    Registers := 288   
++---Muxes : 
+	   8 Input   24 Bit        Muxes := 288   
+	   8 Input   12 Bit        Muxes := 24    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:28 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:29 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:36 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:36 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:37 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:37 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:37 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:37 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   378|
+|3     |LUT1   |   542|
+|4     |LUT2   |   544|
+|5     |LUT3   |    40|
+|6     |LUT4   |   128|
+|7     |LUT5   |   166|
+|8     |LUT6   |    90|
+|9     |FDCE   |   523|
+|10    |IBUF   |    98|
+|11    |OBUF   |   192|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+----------------------+------+
+|      |Instance     |Module                |Cells |
++------+-------------+----------------------+------+
+|1     |top          |                      |  2702|
+|2     |  bf0_0      |butterfly             |   123|
+|3     |    cm       |complex_multiplier_81 |   123|
+|4     |      m0     |booth_top_82          |    87|
+|5     |        uut0 |booth_83              |    27|
+|6     |        uut3 |booth_84              |    18|
+|7     |  bf0_1      |butterfly_0           |   122|
+|8     |    cm       |complex_multiplier_77 |   122|
+|9     |      m0     |booth_top_78          |   102|
+|10    |        uut0 |booth_79              |    27|
+|11    |        uut3 |booth_80              |    33|
+|12    |  bf0_2      |butterfly_1           |   122|
+|13    |    cm       |complex_multiplier_73 |   122|
+|14    |      m0     |booth_top_74          |   102|
+|15    |        uut0 |booth_75              |    27|
+|16    |        uut3 |booth_76              |    28|
+|17    |  bf0_3      |butterfly_2           |   122|
+|18    |    cm       |complex_multiplier_69 |   122|
+|19    |      m0     |booth_top_70          |   102|
+|20    |        uut0 |booth_71              |    27|
+|21    |        uut3 |booth_72              |    33|
+|22    |  bf1_0      |butterfly_3           |   122|
+|23    |    cm       |complex_multiplier_65 |   122|
+|24    |      m0     |booth_top_66          |    87|
+|25    |        uut0 |booth_67              |    27|
+|26    |        uut3 |booth_68              |    18|
+|27    |  bf1_1      |butterfly_4           |   109|
+|28    |    cm       |complex_multiplier_61 |   109|
+|29    |      m3     |booth_top_62          |   109|
+|30    |        uut0 |booth_63              |    11|
+|31    |        uut3 |booth_64              |    41|
+|32    |  bf1_2      |butterfly_5           |   122|
+|33    |    cm       |complex_multiplier_57 |   122|
+|34    |      m0     |booth_top_58          |   102|
+|35    |        uut0 |booth_59              |    27|
+|36    |        uut3 |booth_60              |    33|
+|37    |  bf1_3      |butterfly_6           |   168|
+|38    |    cm       |complex_multiplier_53 |   168|
+|39    |      m3     |booth_top_54          |   168|
+|40    |        uut0 |booth_55              |    11|
+|41    |        uut3 |booth_56              |    51|
+|42    |  bf2_0      |butterfly_7           |   122|
+|43    |    cm       |complex_multiplier_49 |   122|
+|44    |      m0     |booth_top_50          |    87|
+|45    |        uut0 |booth_51              |    27|
+|46    |        uut3 |booth_52              |    18|
+|47    |  bf2_1      |butterfly_8           |   544|
+|48    |    cm       |complex_multiplier_30 |   544|
+|49    |      m0     |booth_top_31          |   158|
+|50    |        uut0 |booth_45              |    27|
+|51    |        uut1 |booth_46              |    31|
+|52    |        uut2 |booth_47              |    17|
+|53    |        uut3 |booth_48              |    14|
+|54    |      m1     |booth_top_32          |    87|
+|55    |        uut0 |booth_42              |    13|
+|56    |        uut2 |booth_43              |    12|
+|57    |        uut3 |booth_44              |    12|
+|58    |      m2     |booth_top_33          |   117|
+|59    |        uut0 |booth_38              |    13|
+|60    |        uut1 |booth_39              |    17|
+|61    |        uut2 |booth_40              |     7|
+|62    |        uut3 |booth_41              |    11|
+|63    |      m3     |booth_top_34          |   128|
+|64    |        uut0 |booth_35              |    27|
+|65    |        uut2 |booth_36              |    25|
+|66    |        uut3 |booth_37              |    26|
+|67    |  bf2_2      |butterfly_9           |    93|
+|68    |    cm       |complex_multiplier_26 |    93|
+|69    |      m3     |booth_top_27          |    93|
+|70    |        uut0 |booth_28              |    11|
+|71    |        uut3 |booth_29              |    36|
+|72    |  bf2_3      |butterfly_10          |   642|
+|73    |    cm       |complex_multiplier    |   642|
+|74    |      m0     |booth_top             |   146|
+|75    |        uut0 |booth_23              |    27|
+|76    |        uut2 |booth_24              |    25|
+|77    |        uut3 |booth_25              |    26|
+|78    |      m1     |booth_top_11          |   152|
+|79    |        uut0 |booth_19              |    27|
+|80    |        uut1 |booth_20              |    23|
+|81    |        uut2 |booth_21              |    26|
+|82    |        uut3 |booth_22              |    26|
+|83    |      m2     |booth_top_12          |   146|
+|84    |        uut0 |booth_16              |    27|
+|85    |        uut2 |booth_17              |    25|
+|86    |        uut3 |booth_18              |    26|
+|87    |      m3     |booth_top_13          |   128|
+|88    |        uut0 |booth                 |    27|
+|89    |        uut2 |booth_14              |    25|
+|90    |        uut3 |booth_15              |    26|
++------+-------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:37 . Memory (MB): peak = 1606.121 ; gain = 697.664
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:37 . Memory (MB): peak = 1606.121 ; gain = 697.664
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:37 . Memory (MB): peak = 1606.121 ; gain = 697.664
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1606.121 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 378 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1606.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a8ec00df
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1606.121 ; gain = 704.602
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/fft_ip.runs/synth_1/fft_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fft_top_utilization_synth.rpt -pb fft_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  6 23:23:23 2023...
