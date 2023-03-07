@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fft_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fft_top_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="144,080.342 ns"></ZoomStartTime>
+      <ZoomEndTime time="146,430.343 ns"></ZoomEndTime>
+      <Cursor1Time time="144,632.008 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="238"></NameColumnWidth>
+      <ValueColumnWidth column_width="115"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/fft_top_tb/x_0" type="array">
+      <obj_property name="ElementShortName">x_0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">x_0[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/x_1" type="array">
+      <obj_property name="ElementShortName">x_1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">x_1[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/x_2" type="array">
+      <obj_property name="ElementShortName">x_2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">x_2[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/x_3" type="array">
+      <obj_property name="ElementShortName">x_3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">x_3[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/x_4" type="array">
+      <obj_property name="ElementShortName">x_4[11:0]</obj_property>
+      <obj_property name="ObjectShortName">x_4[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/x_5" type="array">
+      <obj_property name="ElementShortName">x_5[11:0]</obj_property>
+      <obj_property name="ObjectShortName">x_5[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/x_6" type="array">
+      <obj_property name="ElementShortName">x_6[11:0]</obj_property>
+      <obj_property name="ObjectShortName">x_6[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/x_7" type="array">
+      <obj_property name="ElementShortName">x_7[11:0]</obj_property>
+      <obj_property name="ObjectShortName">x_7[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_0_r" type="array">
+      <obj_property name="ElementShortName">y_0_r[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_0_r[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_0_i" type="array">
+      <obj_property name="ElementShortName">y_0_i[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_0_i[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_1_r" type="array">
+      <obj_property name="ElementShortName">y_1_r[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_1_r[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_1_i" type="array">
+      <obj_property name="ElementShortName">y_1_i[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_1_i[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_2_r" type="array">
+      <obj_property name="ElementShortName">y_2_r[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_2_r[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_2_i" type="array">
+      <obj_property name="ElementShortName">y_2_i[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_2_i[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_3_r" type="array">
+      <obj_property name="ElementShortName">y_3_r[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_3_r[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_3_i" type="array">
+      <obj_property name="ElementShortName">y_3_i[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_3_i[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_4_r" type="array">
+      <obj_property name="ElementShortName">y_4_r[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_4_r[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_4_i" type="array">
+      <obj_property name="ElementShortName">y_4_i[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_4_i[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_5_r" type="array">
+      <obj_property name="ElementShortName">y_5_r[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_5_r[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_5_i" type="array">
+      <obj_property name="ElementShortName">y_5_i[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_5_i[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_6_r" type="array">
+      <obj_property name="ElementShortName">y_6_r[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_6_r[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_6_i" type="array">
+      <obj_property name="ElementShortName">y_6_i[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_6_i[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_7_r" type="array">
+      <obj_property name="ElementShortName">y_7_r[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_7_r[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fft_top_tb/y_7_i" type="array">
+      <obj_property name="ElementShortName">y_7_i[11:0]</obj_property>
+      <obj_property name="ObjectShortName">y_7_i[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
